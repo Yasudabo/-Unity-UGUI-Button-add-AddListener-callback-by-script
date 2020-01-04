@@ -5,5 +5,16 @@
 ![image](https://raw.githubusercontent.com/Yasudabo/Unity_UGUI_Button_AddListener_Callback_By_Script/master/UGUIButtonAddListenerScriptDemo.gif)
 
 --------
-1. 無參數添加Button事件的方式  
-<pre>m_Button.onClick.AddListener(OutIo);</pre>
+1. 無參數事件
+<pre>
+m_Button.onClick.AddListener(OutIo);
+</pre>
+
+2. 帶參數事件
+<pre>
+m_Button.onClick.AddListener( delegate { OutIo(1); });
+</pre>
+
+<pre>
+m_Button.onClick.AddListener(() => { OutIo(2); });
+</pre>
