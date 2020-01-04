@@ -25,7 +25,12 @@ m_Button.onClick.AddListener( () => { OutIo(2); /*其它事件*/ });
 3. 迴圈帶參數的寫法
 <br/>> 注意：傳遞的參數需要先用一個臨時變量去儲存再傳遞，
 <br/>> 否則傳遞的參數值會是迴圈的數量，進而導致報錯！
-
+<pre>
+for (int i=0; i < ButtonList.Length; i++) {
+<br/>           int tmpId = i;
+<br/>           ButtonList[i].onClick.AddListener( () => OutIoElement(tmpId) );
+<br/>}
+</pre>
 
 
 
