@@ -27,8 +27,8 @@ m_Button.onClick.AddListener( () => { OutIo(2); /*其它事件*/ });
 <br/>> 否則傳遞的參數值會是迴圈的數量，進而導致報錯！
 <pre>
 for (int i=0; i < ButtonList.Length; i++) {
-<br/>           int tmpId = i;
-<br/>           ButtonList[i].onClick.AddListener( () => OutIoElement(tmpId) );
+<br/>     int tmpId = i;
+<br/>     ButtonList[i].onClick.AddListener( () => OutIoElement(tmpId) );
 <br/>}
 </pre>
 
