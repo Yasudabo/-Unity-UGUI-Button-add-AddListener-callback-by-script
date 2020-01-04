@@ -10,8 +10,9 @@
 m_Button.onClick.AddListener(OutIo);
 </pre>
 
+<br/>
 2. 帶參數事件，兩種寫法，選順眼的就好
-{ } 的區域裡可以執行更多事件
+<br/>{ } 的區域裡可以執行更多事件
 <pre>
 m_Button.onClick.AddListener( delegate { OutIo(1); });
 </pre>
