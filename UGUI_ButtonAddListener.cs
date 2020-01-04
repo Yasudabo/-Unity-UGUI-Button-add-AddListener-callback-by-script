@@ -14,6 +14,7 @@ public class UGUI_ButtonAddListener : MonoBehaviour {
 
 
     void Start () {
+        
         // A simple way for add a listener by script.
         m_Button_NoParameter.onClick.AddListener(OutIo);
 
@@ -27,6 +28,7 @@ public class UGUI_ButtonAddListener : MonoBehaviour {
             int tmpId = i;
             ButtonList[i].onClick.AddListener( () => OutIoElement(tmpId) );
         }
+        
     }
 
     private void OutIo() {
